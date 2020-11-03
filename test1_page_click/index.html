@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="color_sec">
+        <header>
+            <img class="logo" src="img/logo.png">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+        </header>
+        <div class="content">
+        <div class="content__Box">
+            <h2>That's what<br><span>i like</span></h2>
+            <p>Hacking by QuocAnh Hacking by QuocAnh Hacking by QuocAnh
+                Hacking by QuocAnh Hacking by QuocAnh Hacking by QuocAnh
+                Hacking by QuocAnh Hacking by QuocAnh Hacking by QuocAnh
+            </p>
+            <a href="#">View All Products</a>
+        </div>
+        <div class="image__Box">
+            <img src="img/pepsi001.png" class="pepsi">
+        </div>
+        </div>
+        <ul class="platform-box">
+            <li><img src="img/pepsi001.png" onclick="changeImg('img/pepsi001.png');changecolor('#0062be');"></li>
+            <li><img src="img/pepsi002.png" onclick="changeImg('img/pepsi002.png');changecolor('#e60c2c');"></li>
+            <li><img src="img/pepsi003.png" onclick="changeImg('img/pepsi003.png');changecolor('#1e1e1e');"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function changeImg(img) {
+            document.querySelector('.pepsi').src = img;
+        }
+        function changecolor(color) {
+            const sec_color = document.querySelector('.color_sec');
+            sec_color.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
