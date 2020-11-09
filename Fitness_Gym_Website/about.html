@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#icon_menu_responsive").click(function () {
+            $(".responsive_menu_box").slideToggle();
+        });
+    });
+</script>
+
+<body>
+<header>
+    <a href="#" class="logo"><span>Fit</span>ness</a>
+    <div class="toggle"><button id="icon_menu_responsive"><i class="fas fa-bars" style="font-size: 30px;margin-right: -35px;margin-top: -30px;"></i></button></div>
+    <div class="responsive_menu_box nav_box">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photo.html">Photos</a></li>
+        </ul>
+    </div>
+</header>
+<div class="banner">
+    <video class="video" src="img/bg.mp4" autoplay loop muted type="mp4"></video>
+    <div class="textBox">
+        <h2>About Elite Fitness</h2>
+        <p>
+            Ra đời vào năm 2010, Elite Fitness đã phát triển từ câu lạc bộ đầu tiên tại Xuân Diệu - Hà Nội, trở thành hệ thống CLB thể thao 5 sao tiêu chuẩn quốc tế hàng đầu do tập đoàn BIM Việt Nam làm chủ với 14 câu lạc bộ trải dài trên toàn quốc.
+        </p>
+        <h4>#Elitethink</h4>
+        <p>Thực hành thiền định, sự tập trung và trau dồi sức khoẻ tinh thần</p>
+        <h4>#Eliteeat</h4>
+        <p>Ăn uống đúng cách để để khỏe mạnh toàn diện</p>
+        <h4>#Elitemove</h4>
+        <p>Tập luyện cho hệ tim mạch và thể chất lành mạnh</p>
+        <h4>#Elitelearn</h4>
+        <p>Thường xuyên học hỏi phương cách khoa học để sống khoẻ</p>
+        <h4>#Eliterepeat</h4>
+        <p>Thực hành thường xuyên để tạo nên thói quen Sống Ưu Tú mỗi ngày</p>
+    </div>
+    <div class="imgBox">
+        <img src="img/man5.png" alt="man">
+    </div>
+    <ul class="sci">
+        <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+    </ul>
+</div>
+</body>
+</html>

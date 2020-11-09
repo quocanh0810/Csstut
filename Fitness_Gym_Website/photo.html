@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <style>
+
+        div.img_container{
+            text-align: center;
+            margin-top: 50px;
+            width: 1200px;
+            height: 1000px;
+        }
+
+        .img_box{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        div.img_box img{
+            float: left;
+        }
+        .banner::before{
+            z-index: 0;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#icon_menu_responsive").click(function () {
+            $(".responsive_menu_box").slideToggle();
+        });
+    });
+</script>
+
+<body>
+<header>
+    <a href="#" class="logo"><span>Fit</span>ness</a>
+    <div class="toggle"><button id="icon_menu_responsive"><i class="fas fa-bars" style="font-size: 30px;margin-right: -35px;margin-top: -30px;"></i></button></div>
+</header>
+<div class="banner">
+    <video class="video" src="img/bg.mp4" style="width: 100%" autoplay loop muted type="mp4"></video>
+    <div class="nav_box responsive_menu_box">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photo.html">Photos</a></li>
+        </ul>
+    </div>
+    <div class="img_container" style="position: absolute;overflow: scroll;height: 650px;">
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f1.jpg"><img src="img/f1.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f2.jpg"><img src="img/f2.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f3.jpg"><img src="img/f3.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f4.jpg"><img src="img/f4.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f5.jpg"><img src="img/f5.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f6.jpg"><img src="img/f6.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f7.jpg"><img src="img/f7.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f8.jpg"><img src="img/f8.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f9.jpg"><img src="img/f9.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f16.jpg"><img src="img/f16.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f17.jpg"><img src="img/f17.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f11.png"><img src="img/f11.png"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f12.jpg"><img src="img/f12.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f13.jpg"><img src="img/f13.jpg"></a>
+        </div>
+        <div class="img_box">
+            <a data-fancybox="gallery" href="img/f14.jpg"><img src="img/f14.jpg"></a>
+        </div>
+    </div>
+    <ul class="sci">
+        <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+    </ul>
+</div>
+</body>
+</html>

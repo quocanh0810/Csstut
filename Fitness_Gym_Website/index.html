@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#icon_menu_responsive").click(function () {
+            $(".responsive_menu_box").slideToggle();
+        });
+    });
+</script>
+
 <body>
     <header>
         <a href="#" class="logo"><span>Fit</span>ness</a>
-        <div class="toggle"><img src="img/toggle.png"></div>
+        <div class="toggle"><button id="icon_menu_responsive"><i class="fas fa-bars" style="font-size: 30px;margin-right: -35px;margin-top: -30px;"></i></button></div>
+        <div class="responsive_menu_box nav_box">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photo.html">Photos</a></li>
+            </ul>
+        </div>
     </header>
     <div class="banner">
-        <video src="img/bg.mp4" autoplay loop muted type="mp4"></video>
+        <video class="video" src="img/bg.mp4" autoplay loop muted type="mp4"></video>
         <div class="textBox">
             <h2>More Than Fitness</h2>
             <p>
-                Most of my friends like to stay inside to play video games, read books or watch TV, but I have a good hobby of going outside and playing sports. I play many different sports in my free time; some of them are soccer, 
-                swimming, volleyball and basketball. Sometimes I also ride the bikes or do board skating with my cousin in the park.
+                Physical fitness is a general state of health and well-being and, more specifically, the ability to perform aspects of sports, occupations and daily activities. Physical fitness is generally achieved through proper nutrition, moderate-vigorous physical exercise, physical activity, and sufficient rest.
             </p>
             <a href="#">Read more</a>
         </div>
